@@ -1,6 +1,6 @@
 {
   "name": "@lawlzer/puppeteer-helpers",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@lawlzer/helpers": "^1.4.2",
     "puppeteer": "^10.4.0"
   }
 }
