@@ -27,9 +27,6 @@ export type Page = puppeteer.Page & {
 };
 
 
-
-
-
 export interface Browser extends puppeteer.Browser {
     resetBrowser: (viewportWidth?: number, viewportHeight?: number) => Promise<void>;
     launchPage: (viewportWidth?: number, viewportHeight?: number) => Promise<Page>;
@@ -37,9 +34,6 @@ export interface Browser extends puppeteer.Browser {
     // newPage: () => Promise<Page>;
 };
 
-export function hello(): string {
-    return 'hello';
-}
 
 // a Generator function that returns the browser and page.
 export async function launchBrowser({ realHeadless = false, fakeHeadless = false, chromePath = undefined, slowMo = 30, viewportWidth = 1920, viewportHeight = 800 } = {}): Promise<({ browser: Browser, page: Page })> {
