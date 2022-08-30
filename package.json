@@ -1,8 +1,12 @@
 {
   "name": "@lawlzer/puppeteer-helpers",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "files": [
+    "src",
+    "dist"
+  ],
   "scripts": {
     "start": "ts-node-dev --respawn --transpile-only .\\src\\index.ts",
     "build": "rimraf ./dist && tsc",
